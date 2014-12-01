@@ -36,7 +36,7 @@
 -(void)reloadCharactersFromRealm:(NSString *)aRealmName guildName:(NSString *)aGuildName
 {    
     [self setNetworkActivityIndicatorVisible:YES];
-        
+        //add test again
     [[WoWApiClient sharedClient] guildWithName:aGuildName onRealm:aRealmName success:^(Guild *guild) {
         
         [self setNetworkActivityIndicatorVisible:NO];
